@@ -1,0 +1,32 @@
+{
+  "name": "depromisify",
+  "version": "1.0.0",
+  "description": "A wrapper for synchronously resolving promises for when you just can't do async in node",
+  "main": "lib/index.js",
+  "repository": {},
+  "author": "Travis Peterson",
+  "license": "MIT",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "build": "babel src/ --out-dir lib/",
+    "watch": "onchange 'src/*.js' -i -- npm run build",
+    "test": "babel test/test.js | faucet"
+  },
+  "dependencies": {
+    "deasync": "^0.1.9"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-latest": "^6.22.0",
+    "es6-promise": "^4.0.5",
+    "eslint": "^3.15.0",
+    "eslint-plugin-babel": "^4.0.1",
+    "faucet": "^0.0.1",
+    "tape": "^4.6.3"
+  }
+}

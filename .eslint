@@ -1,0 +1,19 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "standard-react"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+    "no-console": 0,
+    "semi": [2, "always"],
+    "brace-style": [2, "1tbs", { "allowSingleLine": true }],
+    "no-spaced-func": 2,
+    "space-before-function-paren": [2, "never"],
+    "arrow-spacing": [2, {"before": true, "after": true}]
+  }
+}
